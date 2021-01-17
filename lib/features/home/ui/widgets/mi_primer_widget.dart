@@ -24,7 +24,9 @@ class MiPrimerWidget extends StatelessWidget {
                 children: [
                   Icon(Icons.supervised_user_circle),
                   Icon(Icons.ac_unit),
-                  Text("columna 3"),
+                  Container(
+                      margin: EdgeInsets.symmetric(vertical: 10),
+                      child: Text("columna 3")),
                 ],
               )
             ],
