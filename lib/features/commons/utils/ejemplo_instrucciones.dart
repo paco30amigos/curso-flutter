@@ -197,14 +197,47 @@ abstract class Crud<T> {
   T update(T data);
   bool delete(T data);
   T findOne(dynamic data);
+
+  // hacerAlgoEspecifico() {
+  //   print("algo especifico");
+  // }
 }
 
 //implementación de clase abstracta en la definicion de un servicio
 abstract class GallinasFromService implements Crud<Gallina> {
+//
+//herencia de clase abstracta con implementación concreta de algunas funciones
+//ojo! las funciones concretas, por defecto se exponen y tambien se pueden sobreescribir
+//abstract class GallinasFromService extends Crud<Gallina> {
+//
   bool delete(Gallina data);
   Gallina findOne(data);
   Gallina insert(Gallina data);
   Gallina update(Gallina data);
 }
 
-class GallinasFromServiceImpl implements GallinasFromService {}
+class GallinasFromServiceImpl implements GallinasFromService {
+  @override
+  bool delete(Gallina data) {
+    // TODO: implement delete
+    throw UnimplementedError();
+  }
+
+  @override
+  Gallina findOne(data) {
+    // TODO: implement findOne
+    throw UnimplementedError();
+  }
+
+  @override
+  Gallina insert(Gallina data) {
+    // TODO: implement insert
+    throw UnimplementedError();
+  }
+
+  @override
+  Gallina update(Gallina data) {
+    // TODO: implement update
+    throw UnimplementedError();
+  }
+}
