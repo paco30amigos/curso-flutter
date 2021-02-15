@@ -10,7 +10,7 @@ class PersonaPage extends StatefulWidget {
 }
 
 Future<List<PersonaHive>> getPersonas() {
-  return Dependencies.personaServiceImpl.findMany({"nombres": "paco"});
+  return Dependencies.personaServiceImpl.findMany({"nombres": ""});
 }
 
 class _PersonaPageState extends State<PersonaPage> {

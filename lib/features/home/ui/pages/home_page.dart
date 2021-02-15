@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:holaMundo/features/home/ui/widgets/lista_datos.dart';
 import 'package:holaMundo/features/home/ui/widgets/mi_primer_widget.dart';
+import 'package:holaMundo/features/personas/ui/pages/nuevo.dart';
 import 'package:holaMundo/features/personas/ui/pages/persona_page.dart';
 
 class HomePage extends StatelessWidget {
@@ -20,7 +21,7 @@ class HomePage extends StatelessWidget {
         style: TextStyle(fontSize: 50),
       )),
       body: Container(
-        child: PersonaPage(),
+        child: Nuevo(),
       ),
     );
   }
